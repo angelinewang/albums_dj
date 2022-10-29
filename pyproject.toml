@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "test-project"
+version = "0.1.0"
+description = ""
+authors = ["ANGELINE WANG <02ANGELINEWANG@GMAIL.COM>"]
+readme = "README.md"
+packages = [{include = "test_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.982"
+autopep8 = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
