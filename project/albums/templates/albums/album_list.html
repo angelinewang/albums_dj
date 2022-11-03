@@ -1,0 +1,5 @@
+<h1>All albums</h1>
+{% for album in album_list %} <ul>
+    <li>Title: {{ album.title }}</li> <li>Artist: {{ album.artist }}</li> <li>Release Year: {{ album.release_year }}</li>
+</ul>
+{% endfor %}
